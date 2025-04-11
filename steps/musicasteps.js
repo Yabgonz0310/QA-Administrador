@@ -1,7 +1,7 @@
 const { I } = inject();
 
 Given("Estoy en la pagina principal", () => {
-  I.amOnPage("https://www.inmotionhosting.com/");
+  I.amOnPage("https://www.youtube.com/");
   I.wait(10);
 });
 
