@@ -22,7 +22,7 @@ exports.config = {
   },
   gherkin: {
     features: "./features/*.feature",
-    steps: ["./steps/loginSteps.js"],
+    steps: ["./steps/musicaSteps.js"],
   },
   name: "FrameworkYGL",
 };
