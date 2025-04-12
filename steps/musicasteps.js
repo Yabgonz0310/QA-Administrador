@@ -26,7 +26,7 @@ When("Selecciono el resultado de la busqueda", () => {
 });
 
 Then("Se visualiza el video", () => {
-  I.wait(300);
+  I.wait(30);
   //I.click('src="blob:https://www.youtube.com/c8ecbac0-f5fc-4ccc-b74a-bd5a8b85128d"',320);
  
 });
