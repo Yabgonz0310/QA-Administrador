@@ -13,18 +13,22 @@ exports.config = {
   helpers: {
     Playwright: {
       browser: "chromium",
+      //windowSize: '1920x1080',
+     // url: "https://rickandmortyapi.com",
       url: "http://localhost",
+      basicAuth:
+        {
+          username: 'CP1GOLOYMX',
+          password: 'A25FJT70LK'
+        },
       show: true,
-      chromium: {
-
+ 
+    /*  chromium: {
         userDataDir: './user-data-dir', // <-- esto guarda cookies y storage
-    
         args: ['--start-maximized']
-    
       },
-    
       userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
-     
+     */
     },
   },
   include: {
@@ -32,7 +36,15 @@ exports.config = {
   },
   gherkin: {
     features: "./features/*.feature",
-    steps: ["./steps/loginSteps.js","./steps/musicaSteps.js"],
+    steps: ["./steps/buscaruserSteps.js","./steps/crearuserSteps.js"],
+      
   },
-  name: "FrameworkYGL",
+
+  plugins: {
+    allure: {
+      enabled: true,
+      require: "allure-codeceptjs",
+    },
+  },
+  name: "QA ADMINISTRADOR",
 };

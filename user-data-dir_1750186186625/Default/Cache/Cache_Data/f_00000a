@@ -1,0 +1,957 @@
+
+
+
+
+
+
+    
+    
+    
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="/AdminEvolucion/resources/css/bootstrap-glyphicons.css">
+<link rel="stylesheet" type="text/css" href="/AdminEvolucion/resources/css/login.css">
+<link rel="stylesheet" type="text/css" href="/AdminEvolucion/resources/css/style.css">
+<link rel="stylesheet" type="text/css" href="/AdminEvolucion/resources/css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="/AdminEvolucion/resources/css/sweetalert.css">
+<link rel="stylesheet" type="text/css" href="/AdminEvolucion/resources/css/bootstrap.css">
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Nuevo usuario</title>
+</head>
+
+	<body>
+		<img id="MyIMG" width="1" height="1" src="/AdminEvolucion/resources/images/indicatorc.gif" />
+	
+		<!-- Formulario combinado horizontal y lineal -->
+		<div  class="container">
+	
+			
+
+
+
+
+
+
+
+<!-- HEADER -->
+<div class="row">
+
+	<div class="col-md-8 pull-left">
+		<h2 id="header-welcome">
+			<a href="/AdminEvolucion/inicio"
+				style="text-decoration: none">Administrador Evolucion</a>
+		</h2>
+	</div>
+
+	<div class="col-md-4 pull-right">
+		<ul class="nav navbar-nav pull-right">
+			<li class="dropdown"><a href="#" class="dropdown-toggle"
+				data-toggle="dropdown"> <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;CCP TEST
+					<strong class="caret"></strong>
+			</a>
+
+				<ul class="dropdown-menu">
+					<li><a href="/AdminEvolucion/logoutuser">
+							<span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;Cerrar
+							sesi&oacute;n
+					</a></li>
+				</ul></li>
+		</ul>
+		<!-- end nav pull-right -->
+	</div>
+
+</div>
+
+<!-- MENU -->
+<form>
+	<div class="row">
+		<div class="col-md-12">
+
+			
+				
+
+				
+					<ul class="nav nav-tabs" style="padding-bottom: 4px;"
+						id="menu-admin">
+
+						<li><img
+							src="/AdminEvolucion/resources/images/logo.jpg"
+							id="logotmx" style="margin-top: -5px;" alt="Telmex"></li>
+
+						<!-- USUARIOS -->
+						
+							<li role="presentation" id="tab-usuarios" class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#"
+								role="button" aria-haspopup="true" aria-expanded="false">Usuarios
+									<span class="caret"></span>
+							</a>
+								<ul class="dropdown-menu">
+
+									
+
+										
+											<li><a
+												href="/AdminEvolucion/newUser.htm">
+													<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Crear
+											</a></li>
+										
+
+
+										
+									
+
+										
+
+
+										
+									
+
+										
+
+
+										
+									
+
+										
+
+
+										
+									
+
+										
+
+
+										
+									
+
+										
+
+
+										
+									
+
+										
+
+
+										
+									
+
+										
+
+
+										
+									
+
+										
+
+
+										
+									
+
+										
+
+
+										
+									
+
+										
+
+
+										
+									
+
+										
+
+
+										
+									
+
+										
+
+
+										
+									
+
+										
+
+
+										
+									
+
+										
+
+
+										
+											<li><a
+												href="/AdminEvolucion/searchUser.htm">
+													<span class="glyphicon glyphicon-search"></span>&nbsp;&nbsp;Buscar Usuario
+											</a></li>
+										
+									
+
+										
+
+
+										
+									
+
+										
+
+
+										
+									
+
+										
+
+
+										
+									
+
+
+								</ul>
+							</li>
+						
+
+
+
+						<!-- PERFILES -->
+
+						
+							<li role="presentation" id="tab-usuarios" class="dropdown"><a
+								class="dropdown-toggle" data-toggle="dropdown" href="#"
+								role="button" aria-haspopup="true" aria-expanded="false">Perfiles
+									<span class="caret"></span>
+							</a>
+								<ul class="dropdown-menu">
+
+									
+
+										
+
+										
+
+									
+
+										
+
+										
+
+									
+
+										
+
+										
+
+									
+
+										
+											<li><a
+												href="/AdminEvolucion/newPerfil.htm">
+													<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Crear
+											</a></li>
+										
+
+										
+
+									
+
+										
+
+										
+
+									
+
+										
+
+										
+
+									
+
+										
+
+										
+
+									
+
+										
+
+										
+
+									
+
+										
+
+										
+
+									
+
+										
+
+										
+
+									
+
+										
+
+										
+
+									
+
+										
+
+										
+
+									
+
+										
+
+																					<li><a
+												href="/AdminEvolucion/searchPerfil.htm.htm">
+													<span class="glyphicon glyphicon-search"></span>&nbsp;&nbsp;Buscar
+											</a></li>
+										
+
+									
+
+										
+
+										
+
+									
+
+										
+
+										
+
+									
+
+										
+
+										
+
+									
+
+										
+
+										
+
+									
+
+										
+
+										
+
+									
+
+								</ul></li>
+						
+
+						<!-- TAREAS -->
+
+						
+							<li role="presentation" id="tab-usuarios" class="dropdown"><a
+								class="dropdown-toggle" data-toggle="dropdown" href="#"
+								role="button" aria-haspopup="true" aria-expanded="false">Tareas
+									<span class="caret"></span>
+							</a>
+								<ul class="dropdown-menu">
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+											<li><a
+												href="/AdminEvolucion/newTarea.htm">
+													<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Crear
+											</a></li>
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+																					<li><a
+												href="/AdminEvolucion/searchTarea.htm">
+													<span class="glyphicon glyphicon-search"></span>&nbsp;&nbsp;Buscar
+											</a></li>
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+								</ul></li>
+						
+
+
+						<!--PERMISOS-->
+						
+						
+							<li role="presentation" id="tab-usuarios" class="dropdown"><a
+								class="dropdown-toggle" data-toggle="dropdown" href="#"
+								role="button" aria-haspopup="true" aria-expanded="false">Permisos
+									<span class="caret"></span>
+							</a>
+								<ul class="dropdown-menu">
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+
+										
+
+
+																					<li><a
+												href="/AdminEvolucion/searchPermisos.htm">
+													<span class="glyphicon glyphicon-search"></span>&nbsp;&nbsp;Buscar
+											</a></li>
+										
+										
+										
+									
+
+										
+
+
+										
+										
+										
+									
+								</ul></li>
+						
+
+
+
+						<!-- Bitacora de actividades -->
+					
+					</ul>
+				
+
+			
+
+
+
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://cloudappspre.telmex.com:443/AdminEvolucion/resources/js/jquery-1.10.2.min.js"></script>
+		<script src="https://cloudappspre.telmex.com:443/AdminEvolucion/resources/js/bootstrap.min.js"></script>
+
+	</div>
+</form>
+			
+			<h3 class="text-left">Datos de usuario:</h3><br>
+			
+			<div id="container-user" class="row">
+				<div class="col-sm-offset-2 col-sm-8">
+				
+					<form id="usuarioForm" class="form-horizontal" role="form" action="newUser" method="post">
+		
+						
+					
+					<!-- NOMBRE DE USUARIO -->
+						<div class="form-group">
+							<label class="col-sm-3" for="inputUsername">Nombre de usuario: </label>
+							<div class="col-sm-9">
+								<input id="inputNombreUsuario" name="nombreUsuario" class="form-control" type="text" value="Juan Morales"/>
+								
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label class="col-sm-3" for="inputUsername">usuario: </label>
+							<div class="col-sm-9">
+								<input id="inputUsername" name="usuario" class="form-control" type="text" value="morales1994"/>
+								<span id="usuario.errors" style="color:#a94442">El usuario ya existe.</span>
+							</div>
+						</div>
+						
+						<!-- CORREO -->
+						
+						<div class="form-group">
+							<label class="col-sm-3" for="inputCorreo">correo: </label>
+							<div class="col-sm-9">
+								<input id="inputCorreo" name="correo" class="form-control" type="text" value="moju@globahitss.com"/>
+								
+							</div>
+						</div>
+						
+						<!-- PASSWORD -->
+						<div class="form-group">
+							<label class="col-sm-3" for="inputPasswd">Password: </label>
+							<div class="col-sm-8">
+								<input id="inputPasswd" name="password" class="form-control" type="password" value="mor41e5#5"/>
+								
+							</div>
+							<div class="col-sm-1">
+								<span id="eye-open-icon" class="glyphicon glyphicon-eye-open" 
+									title="Mostrar password"></span>
+							</div>
+						</div>
+						
+					
+
+					<div class="form-group" id="divCheckSubordinado">
+						<label class="col-sm-3">Subordinado:</label>
+						<div class="col-sm-3" id="check-subordinado">
+							<input id="subordinado" name="subordinado" type="checkbox" value="true"/><input type="hidden" name="_subordinado" value="on"/>
+						</div>
+					</div>
+					
+					<div class="form-group"  id="divUsuariosGerente">
+								<label class="col-sm-3" for="selectGerentes">Gerentes: </label>
+								<div class="col-sm-9">
+									<select id="selectGerentes" name="usuarioGerente" class="form-control">
+										<option value="-1" selected="selected"> --Usuarios gerenciales--</option>
+										
+											<option value="auditorPBX">Auditoria PBX</option>
+										
+											<option value="23301216">MITRE DELGADO LUISA MARIA</option>
+										
+											<option value="consultaPBX">Auditoria Sistema Cloud PBX</option>
+										
+											<option value="ustestbloq">ustestbloq</option>
+										
+											<option value="urielPrueba">urielPrueba</option>
+										
+											<option value="pbaPBX">Prueba PS PBX</option>
+										
+											<option value="1801253">adminDDP</option>
+										
+											<option value="Edgar Alonso Mart&iacute;nez">EMGOMEZ</option>
+										
+											<option value="Alonso Mtz">Alonso Mtz</option>
+										
+									</select>
+								</div>
+					</div>
+
+
+					<div class="form-group"  id="divPerfiles">
+								<label class="col-sm-3" for="idPerfilSel">Perfiles: </label>
+								<div class="col-sm-9">
+									<select id="selectPerfil" name="idPerfilSel" class="form-control">
+										<option value="-1"> --SELECCIONA UN PERFIL--</option>
+										
+											<option value="58">SUPER ADMINISTRADOR PLT</option>
+										
+											<option value="59" selected="selected">pr_subordinado2</option>
+										
+									</select>
+								</div>
+							</div>
+					    	
+					    
+							<br></br>
+
+
+					
+					<!-- BOTONES DEL FORMULARIO -->
+						<div class="form-group">
+							<div class="col-sm-offset-8 col-sm-2">
+								<button type="button" id="btn-cancel" class="btn btn-block btn-danger pull-right">Cancelar</button>
+							</div>
+							<div class="col-sm-2">
+								<button type="submit" class="btn btn-block btn-primary pull-right">Agregar</button>
+							</div>
+						</div>
+
+
+					<input id="idPlataforma" name="idPlataforma" type="hidden" value="18"/>
+
+				</form>
+				
+				</div>
+			</div>
+		</div>
+
+	<script src="https://cloudappspre.telmex.com:443/AdminEvolucion/resources/js/jquery.js"></script>
+		<script src="https://cloudappspre.telmex.com:443/AdminEvolucion/resources/js/jquery-ui.js"></script>
+	
+		<script>
+		
+			$(document).ready(function(){
+				
+				
+				var idPlataforma=$("#idPlataforma").val();
+				$("#divUsuariosGerente").hide();
+				$("#divCheckSubordinado").hide();
+				
+				if(idPlataforma==1){
+				
+					$("#divCheckSubordinado").show();
+				
+				}else{
+					$("#divCheckSubordinado").hide();
+					$("#divUsuariosGerente").hide();
+				}
+				
+							
+				if('false'=='true'){
+ 					 $("#selPlataformas").val("-1");
+ 					 
+					$("#divPerfiles").hide();
+					
+				}
+							
+				
+						$("#selPlataformas").change(function() {
+						
+			  					  var plataforma = $(this).val();
+			  					  
+			  					  $('#selectPerfil').empty();
+			    				  $("#selectPerfil").append('<option value="-1">-- SELECCIONA UN PERFIL--</option>');
+			
+			    				  
+			    				  if(plataforma==1){
+										$("#divCheckSubordinado").show();
+										$("#subordinado").prop("checked",false);
+										
+									}else{
+										$("#divCheckSubordinado").hide();
+										$("#divUsuariosGerente").hide();
+									}
+			    					
+			    				  
+								if (plataforma != "-1") {
+									var ajax_data = {
+										"plataforma" : plataforma
+								};
+
+								$.ajax({
+
+									type : "POST",
+									url : "searchPlataforma",
+									cache : false,
+									data : ajax_data,
+									dataType : 'json',
+									success : function(data) {
+
+										if (data != null) {
+
+									
+											$("#divPerfiles").show();
+											
+											var selectoption="";
+												
+													$.each(data, function(i,item) {
+    												$("#selectPerfil").append('<option value="' + item.idPerfil + '">' + item.nombre + '</option>');
+
+    													
+													});
+
+												}
+
+											},
+
+											error : function(e) {
+												setUpdateMessage(alertDiv, -1);
+											}
+
+										});
+									}
+
+								});
+								
+								
+				//VISIBILIDAD DEL PASSWORD
+								
+				$("#eye-open-icon").click(function(){
+					
+					var pass = document.getElementById("inputPasswd");
+					
+					if(pass.type == 'password'){
+						$(this).removeClass("glyphicon-eye-open").addClass("glyphicon-eye-close").attr('title', 'Ocultar password');
+						pass.type = 'text';
+					} else{
+						$(this).removeClass("glyphicon-eye-close").addClass("glyphicon-eye-open").attr('title', 'Mostrar password');;
+						pass.type = 'password';
+					}
+					
+				});
+				
+					
+				$("#check-subordinado").click(function() {
+						if($("#subordinado").is(":checked")){
+							$("#divUsuariosGerente").show();
+						}else{
+						$("#divUsuariosGerente").hide();
+						
+						}
+						
+								});
+
+							});
+		</script>
+				<!--Script que se ejecuta cada 5 minutos para mantener viva la sesion  -->    
+	
+	<script>
+	setInterval(function() {
+		var MyElement = document
+				.getElementById('MyIMG');
+		
+		MyElement.src = 'indicatorc.gif rand = '
+				+ Math.random();
+	}, 300000); 
+	
+	</script>   
+	</body>
+</html>
