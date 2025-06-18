@@ -14,16 +14,10 @@ class CrearUsuario {
 
       //Datos usuario
       inputname: '[id="inputNombreUsuario"]',
-      nombre: "Juan Morales",
       inputusername: '[id="inputUsername"]',
-      usuario: "morales1994",
       inputmail: '[id="inputCorreo"]',
-      mail: "moju@globahitss.com",
       inputpass: '[id="inputPasswd"]',
-      pass: "mor41e5#5",
       inputperfil: "#selectPerfil", //'[id="selectPerfil"]'
-      perfil: '59', //'//option[text()="SUPER ADMINISTRADOR PLT"]',
-      //perfil2: '59',//option[text()="pr_subordinado2"]',
       btncancel: '[id="btn-cancel"]',
       btnadd: '//button[text()="Agregar"]',
     };
@@ -36,25 +30,22 @@ class CrearUsuario {
     I.fillField(this.fields.inputpasswd, this.fields.passwd);
     I.wait(2);
     I.click(this.fields.btnlogin);
-    I.wait(5);
+    I.wait(8);
   }
 
-  crearuser() {
+  crearuser(nombre, usuario, correo, password, perfil) {
     I.click(this.fields.btnusers);
     I.wait(1);
     I.click(this.fields.btncrear);
     I.wait(3);
-    I.fillField(this.fields.inputname, this.fields.nombre);
-    I.fillField(this.fields.inputusername, this.fields.usuario);
-    I.fillField(this.fields.inputmail, this.fields.mail);
-    I.fillField(this.fields.inputpass, this.fields.pass);
-    //I.click(this.fields.inputperfil)
-    //I.selectOption('#selectPerfil', this.fields.perfil);
-    I.selectOption(this.fields.inputperfil, this.fields.perfil)
+    I.fillField(this.fields.inputname, nombre);
+    I.fillField(this.fields.inputusername, usuario);
+    I.fillField(this.fields.inputmail, correo);
+    I.fillField(this.fields.inputpass, password);
+    I.selectOption(this.fields.inputperfil, perfil.toString())
     I.wait(1);
     I.click(this.fields.btnadd)
-    
-    I.wait(20);
+    I.wait(5);
   }
 }
 module.exports = new CrearUsuario();

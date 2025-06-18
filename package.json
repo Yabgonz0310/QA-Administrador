@@ -3,7 +3,7 @@
     "codeceptjs": "^3.7.3",
     "playwright": "^1.51.1"
   },
-  "name": "frameworkygl",
+  "name": "qa-administrador",
   "version": "1.0.0",
   "main": "codecept.conf.js",
   "dependencies": {
